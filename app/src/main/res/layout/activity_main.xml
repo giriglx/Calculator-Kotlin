@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context="com.example.giri.calculator_kotlin.MainActivity">
 <EditText
     android:layout_width="match_parent"
@@ -19,16 +20,18 @@
         android:orientation="horizontal"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp">
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tvOutput"
+            />
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etSign"/>
+            android:id="@+id/etSign"
+            />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/tvOutput"
-        />
+
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -48,22 +51,26 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:id="@+id/seven"
             android:text="7"
             />
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="8"
+            android:id="@+id/eight"
             android:layout_marginStart="15dp"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="9"
+            android:id="@+id/nine"
             android:layout_marginStart="15dp"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="*"
+            android:id="@+id/multiply"
             android:layout_marginStart="15dp"/>
 
     </LinearLayout>
@@ -78,21 +85,25 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:id="@+id/six"
             android:text="6"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="5"
+            android:id="@+id/five"
             android:layout_marginStart="15dp"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="4"
+            android:id="@+id/fore"
             android:layout_marginStart="15dp"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="/"
+            android:id="@+id/div"
             android:layout_marginStart="15dp"/>
 
     </LinearLayout>
@@ -106,21 +117,25 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:id="@+id/three"
             android:text="3"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="2"
+            android:id="@+id/two"
             android:layout_marginStart="15dp"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="1"
+            android:id="@+id/one"
             android:layout_marginStart="15dp"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
+            android:id="@+id/minus"
             android:text="-"/>
 
     </LinearLayout>
@@ -134,22 +149,25 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-
+            android:id="@+id/dot"
             android:text="."/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
+            android:id="@+id/zero"
             android:text="0"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
-            android:text="/"/>
+            android:id="@+id/add"
+            android:text="+"/>
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
+            android:id="@+id/equal"
             android:text="="/>
 
     </LinearLayout>
